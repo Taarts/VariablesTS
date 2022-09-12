@@ -38,3 +38,4 @@ const secondOperand = window.prompt('Enter another number')
 console.log(`You entered ${secondOperand}`)
 
 const sum = parseFloat(firstOperand) + parseFloat(secondOperand)
+console.log(`The sum of ${firstOperand} and ${secondOperand} is ${sum}`)
