@@ -30,3 +30,11 @@ console.table(aboutMe)
 
 const userName = window.prompt('What is your name?')
 console.log(`Hello, ${userName}!`)
+
+const firstOperand = window.prompt('Enter a number')
+console.log(`You entered ${firstOperand}`)
+
+const secondOperand = window.prompt('Enter another number')
+console.log(`You entered ${secondOperand}`)
+
+const sum = parseFloat(firstOperand) + parseFloat(secondOperand)
