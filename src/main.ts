@@ -1,23 +1,29 @@
 import './style.css'
-import typescriptLogo from './typescript.svg'
-import { setupCounter } from './counter'
 
-document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://www.typescriptlang.org/" target="_blank">
-      <img src="${typescriptLogo}" class="logo vanilla" alt="TypeScript logo" />
-    </a>
-    <h1>Vite + TypeScript</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite and TypeScript logos to learn more
-    </p>
-  </div>
-`
+// Create a variable that stores the numberOfCupsOfCoffee that you drink every day.
+let numberOfCupsOfMatcha = 2
+// Create a variable called fullName and set it equal to your full name.
+const fullName: string = 'Tricia'
+// Use console.log and your variables, numberOfCupsOfCoffee and fullName to output all three on one line.
+const message = `Hi, my name is ${fullName} and I drink ${numberOfCupsOfMatcha} cups of matcha a day.`
+console.log(message)
 
-setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
+// Create an variable that stores an object. Make the properties of the object fullName, luckyNumber , and favoriteMovies. Where fullname is your full name, luckyNumber is a number value of your favorite number, and favoriteMovies is an array of strings of a few of your top movies. NOTE: Try doing this using object literal: const aboutMe = { } and put the properties inside.
+
+const aboutMe = {
+  fullName: 'Tricia',
+  luckyNumber: 13,
+  favoriteMovies: [
+    'Interstellar',
+    'The Fifth Element',
+    "Le Fabuleux Destin d'Amélie Poulain",
+  ],
+}
+
+console.table(aboutMe)
+
+// type aboutYou = {
+//   fullName: string
+//   luckyNumber: number
+//   favoriteMovies: string[]
+// }
