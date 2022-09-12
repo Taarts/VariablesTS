@@ -1,5 +1,5 @@
 import './style.css'
-
+// Practice Creating Variables
 // Create a variable that stores the numberOfCupsOfCoffee that you drink every day.
 let numberOfCupsOfMatcha = 2
 // Create a variable called fullName and set it equal to your full name.
@@ -22,8 +22,11 @@ const aboutMe = {
 
 console.table(aboutMe)
 
-// type aboutYou = {
-//   fullName: string
-//   luckyNumber: number
-//   favoriteMovies: string[]
-// }
+/* Practice Getting Input From the User
+
+    Using window.prompt, Ask the user for their name and store it in a variable named userName.
+    Use console.log to show a greeting to the user, using their name.
+*/
+
+const userName = window.prompt('What is your name?')
+console.log(`Hello, ${userName}!`)
