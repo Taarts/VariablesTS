@@ -27,7 +27,11 @@ console.table(aboutMe)
     Using window.prompt, Ask the user for their name and store it in a variable named userName.
     Use console.log to show a greeting to the user, using their name.
 */
-
+// type answer = {
+// userName: string
+// firstOperand: string | null
+// secondOperand: string | null
+// }
 const userName = window.prompt('What is your name?')
 console.log(`Hello, ${userName}!`)
 
@@ -37,5 +41,32 @@ console.log(`You entered ${firstOperand}`)
 const secondOperand = window.prompt('Enter another number')
 console.log(`You entered ${secondOperand}`)
 
+/* Doing Math
+
+    Add the operand variables from above and save the results in a variable named sum.*/
 const sum = parseFloat(firstOperand) + parseFloat(secondOperand)
 console.log(`The sum of ${firstOperand} and ${secondOperand} is ${sum}`)
+
+/*    Subtract the secondOperand variable from the firstOperand variable and save the results in a variable named difference.*/
+const difference = parseFloat(firstOperand) - parseFloat(secondOperand)
+console.log(
+  `The difference of ${firstOperand} and ${secondOperand} is ${difference}`
+)
+/*Multiply the operand variables and save the results in a variable named product.*/
+const product = parseFloat(firstOperand) * parseFloat(secondOperand)
+console.log(
+  `The multiplication of ${firstOperand} and ${secondOperand} is ${product}`
+)
+/*Divide the firstOperand by the secondOperand and save the results in a variable named quotient.*/
+const quotient = parseFloat(firstOperand) / parseFloat(secondOperand)
+console.log(
+  `The quotient of ${firstOperand} and ${secondOperand} is ${quotient}`
+)
+/*Find the remainder when one operand is divided by the other and save the results in a variable named remainder.*/
+const remainder = parseFloat(firstOperand) % parseFloat(secondOperand)
+console.log(
+  `The remainder of ${firstOperand} and ${secondOperand} is ${remainder}`
+)
+
+/*    Use console.log to present the user, in a meaningful way, each of the values for the sum, difference, quotient, product, and remainder variables. (e.g. perhaps one of your outputs is similar to If you add 4 and 5 you get 9 if 4 and 5 were the input)
+ */
